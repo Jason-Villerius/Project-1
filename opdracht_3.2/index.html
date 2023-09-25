@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="fname">Voornaam:</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <label for="lname">Achternaam:</label><br>
+        <input type="text" id="lname" name="lname" value=""><br><br>
+
+        <label form="gender">Je geslacht</label><br>
+        <input list="gender" value="Man">
+        <datalist id="gender">
+            <option value="Man">
+            <option value="Vrouw">
+            <option value="Ander">
+        </datalist><br><br>
+
+        <label for="huisnummer">Straat met huisnummer</label><br>
+        <input type="text" id="huisnummer" name="huisnummer"><br><br>
+        
+        <label for="postcode"><P></P>ostcode</label><br>
+        <input type="text" id="postcode" name="postcode"><br><br>
+        
+        <label for="bsn">BSN-nummer:</label><br>
+        <input type="text" id="bsn" name="bsn" maxlength="9" size="9"><br><br>
+
+        <label for="datemin">Datum van vertrek:</label>
+        <input type="date" id="datemin" name="datemin" min="2023-09-20"><br>
+        <label for="dateb">Datum van terugkomst:</label>
+        <input type="date" id="dateb" name="dateb" min="2023-09-21"><br><br>
+
+        <label for="quantity">Aantal reisgenoten (between 0 and 3):</label>
+        <input type="number" id="quantity" name="quantity" min="0" max="3"><br><br>
+
+        <input type="submit" value="Boek nu"><br><br>
+
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <input type="submit" value="submit">
+      </form> 
+</body>
+</html>
