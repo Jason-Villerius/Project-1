@@ -7,6 +7,8 @@ html {
   font-size: 62.5%;
 }
 body {
+  font-weight: bold;
+  color: aqua;
   font-family: "Goldman", cursive;
 }
 
@@ -36,4 +38,16 @@ nav a {
 }
 nav img {
   width: 5vw;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  min-height: 5vh;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  background: #00a8c7;
+  justify-content: space-between;
 }
