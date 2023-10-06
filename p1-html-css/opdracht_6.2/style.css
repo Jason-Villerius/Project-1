@@ -1,0 +1,27 @@
+#flex-container {
+    display: flex;
+    max-width:1200px ;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.box_size {
+height: 200px;
+width: 200px;
+}
+
+.box1 {
+    background-color: blue;
+}
+
+.box2 {
+    background-color: black;
+}
+
+.box3 {
+    background-color: red;
+}
+
+.box4 {
+    background-color: green;
+}
