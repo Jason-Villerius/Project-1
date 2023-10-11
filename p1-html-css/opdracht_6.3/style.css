@@ -1,0 +1,19 @@
+#nav{
+  color: blue;
+  font-size: 50px;
+  Display: flex;
+  Justify-content: space-evenly;
+  }
+  .nav-logo{
+    margin-left: 10%;
+    margin-right: 10%;
+    Justify-self: start;
+    }
+    .nav-login{
+      margin-left: 10%;
+      margin-right: 10%;
+    Justify-self: end;
+    }
+    .nav-items{
+    Justify-content: space-evenly;
+    }
