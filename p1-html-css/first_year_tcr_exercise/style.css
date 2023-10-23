@@ -4,15 +4,24 @@
   box-sizing: border-box;
 }
 html {
+  padding-bottom: 200px;
   font-size: 62.5%;
 }
 body {
+  background-position: center;
+  background-size: cover;
+  background-image: url('background.jpeg');
+}
+
+body {
+  min-height: 100vh;
   font-weight: bold;
   color: aqua;
   font-family: "Goldman", cursive;
 }
 
 nav {
+  position: sticky;
   display: flex;
   width: 100%;
   padding: 2rem;
@@ -41,10 +50,12 @@ nav img {
 }
 
 footer {
+  bottom: 0%;
+  height: 80px;
+  flex-shrink: 0;
   display: flex;
   width: 100%;
   padding: 2rem;
-  min-height: 5vh;
   align-items: center;
   flex-wrap: wrap;
   margin: auto;
