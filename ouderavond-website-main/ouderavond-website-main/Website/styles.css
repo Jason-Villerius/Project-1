@@ -33,6 +33,9 @@ body
 {
   float: left;
   overflow: hidden;
+  margin-top: 8px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
 }
 .dropdown .dropbtn
 {
@@ -57,6 +60,8 @@ body
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
 }
 .dropdown-content a
 {
@@ -74,4 +79,46 @@ body
 .dropdown:hover .dropdown-content
 {
   display: block;
+  list-style: none;
+}
+#btn
+{
+  font-size: 16px;
+  border: none;
+  font-weight: bold;
+  background-color: #dbff4a;
+  border-radius: 0.5rem;
+  float: right;
+  padding: 12px 14px;
+  margin-top: 15px;
+  margin-right: 1rem;
+  padding: 11px 24px;
+}
+.dropdown
+{
+  margin-right: 60px;
+  margin-left: 60px;
+}
+.tcrhomeimg
+{
+  float: right;
+  margin-top: 3rem;
+  margin-right: 5.5rem;
+}
+.tcrhometxt
+{
+  float: left;
+  margin-top: 10rem;
+  margin-left: 6rem;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bolder;
+  font-size: 500%;
+  position: absolute;
+  font-style: oblique;
+  transform: translate(-50%, -50);
+}
+.container
+{
+  position: relative;
 }
