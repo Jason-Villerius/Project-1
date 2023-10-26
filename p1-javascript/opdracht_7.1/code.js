@@ -1,10 +1,14 @@
-budget = 50; 
-product = 60;
+let product = 100;
+//let budget = 10;
+let budget = prompt("Hoeveel geld heb je?", 0)
 
-if (product < budget ) {
-  product = "U heeft genoeg geld!";
-} else {
-  product = "Helaas, te weinig geldt";
+let ResultP = document.getElementById("demo");
+
+if (product >= budget) {
+  ResultP.innerHTML = "Helaas, te weinig geldt";
+  ResultP.style.color = "red";
+} 
+else {
+  ResultP.innerHTML = "U heeft genoeg geld!";
+  ResultP.style.color = "green";
 }
-
-document.getElementById("demo").innerHTML = product;
