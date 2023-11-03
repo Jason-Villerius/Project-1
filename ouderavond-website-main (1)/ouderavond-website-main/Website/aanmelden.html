@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="showdown icon" type="x-logo" href="img/tcrweblogo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aanmelden</title>
+    <link rel="stylesheet" href="aanmelden.css">
+    <script src="code.js"></script>
+    <script src="https://kit.fontawesome.com/3f23daf1c6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <div class="form-box">
+        <h1 id="title">Sign Up</h1>
+        <form>
+            <div class="input-group">
+                <div class="input-field" id="nameField">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Name">
+                </div>
+
+                <div class="input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Email">
+                </div>
+
+                <div class="input-field">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+                <p>Lost password? <a href="#">Click here!</a></p>
+            <div class="btn-sign">
+                <button type="button" id="choose">register</button>
+            </div>
+
+            </div>
+            <div class="btn-field">
+                <button type="button" id="signupBtn">Sign up</button>
+                <button type="button" id="signinBtn" class="disable">Sign in</button>
+            </div>
+        </form>
+    </div>
+    <div class="btn-back">
+        <button type="button" onclick="location.href='index.html'"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> back</button>
+    </div>
+</div>
+<footer>
+    <p>&copy; 2023 ouderavond-website Bradley</p>
+</footer>
+
+<script>
+let signupBtn = document.getElementById("signupBtn");
+let signinBtn = document.getElementById("signinBtn");
+let nameField = document.getElementById("nameField");
+let register = document.getElementById("register");
+let title = document.getElementById("title");
+var div = document.getElementById('choose')
+var display = 0;
+
+
+signinBtn.onclick = function()
+{
+    nameField.style.maxHeight = "0";
+    title.innerHTML = "Sign in";
+    signupBtn.classList.add("disable");
+    signinBtn.classList.remove("disable");
+    choose.innerHTML = "log in";
+}
+
+signupBtn.onclick = function()
+{
+    nameField.style.maxHeight = "60px";
+    title.innerHTML = "Sign up";
+    signupBtn.classList.remove("disable");
+    signinBtn.classList.add("disable");
+    choose.innerHTML = "register";
+}
+</script>
+
+</body>
+</html>

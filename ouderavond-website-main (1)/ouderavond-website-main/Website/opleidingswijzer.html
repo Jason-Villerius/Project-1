@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="showdown icon" type="x-logo" href="img/tcrweblogo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opleidingswijzer</title>
+    <link rel="stylesheet" href="opleidingswijzer.css">
+    <script src="code.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+      <img src="img/download.png" id="logo" onclick="location.href='index.html'">
+        <div class="context">
+          <div class="dropdown">
+          <button class="dropbtn">techniekcollegerotterdam</button>
+            <div class="dropdown-content">
+              <li><a href="https://www.techniekcollegerotterdam.nl">techniekcollegerotterdam</a></li>
+              <li><a href="https://tcr-student.educus.nl/?2">eduarte</a></li>
+              <li><a href="https://flexedu.instructure.com">canvas</a></li>
+              <li><a href="software.html">software</a></li>
+            </div>
+          </div>
+          <div class="dropdown">
+          <button class="dropbtn">informatie student</button>
+            <div class="dropdown-content">
+              <li><a href="studentenadvies.html">studenten advies</a></li>
+              <li><a href="opleidingswijzer.html">opleidings wijzer</a></li>
+              <li><a href="examenplanner.html">examen planner</a></li>
+            </div>
+          </div>
+          <div class="dropdown">
+          <button class="dropbtn">ouderavonden</button>
+            <div class="dropdown-content">
+              <li><a href="ouderavonden.html">ouderavonden</a></li>
+              <li><a href="begeleiding.html">begeleiding</a></li>
+            </div>
+          </div>
+          <div class="dropdown">
+          <button class="dropbtn">over ons</button>
+            <div class="dropdown-content">
+              <li><a href="https://www.techniekcollegerotterdam.nl/over-techniek-college-rotterdam">over tcr</a></li>
+              <li><a href="overons.html">over ons</a></li>
+              <li><a href="locaties.html">locaties</a></li>
+            </div>
+          </div>
+          <button id="btn" onclick="location.href='aanmelden.html'">Aanmelden</button>
+        </div>
+    </div>
+  </nav>
+<main>
+<div class="container">
+  <div class="opleidingswijzer">
+    <button onclick="myFunction()" class="opleidingswijzerbtn">Kies opleiding</button>
+    <div id="myDropdown" class="opleidingswijzer-content">
+    <a href="https://www.techniekcollegerotterdam.nl/aanmelden/studie">allround autotechnicus (BBL)</a>
+    <a href="https://www.techniekcollegerotterdam.nl/aanmelden/studie">allround autotechnicus (BOL)</a>
+    <a href="https://www.techniekcollegerotterdam.nl/aanmelden/studie">Software Developer (BBL)</a>
+    <a href="https://www.techniekcollegerotterdam.nl/aanmelden/studie">Software Developer (BOL)</a>
+    <a href="https://www.techniekcollegerotterdam.nl/aanmelden/studie">Software Developer - Creative Media Technology (BOL)</a>
+    <a href="https://www.techniekcollegerotterdam.nl/aanmelden/studie">Straatmaker (BBL)</a>
+    <a href="https://www.techniekcollegerotterdam.nl/aanmelden/studie">Stukadoor (BBL)</a>
+    <a href="https://www.techniekcollegerotterdam.nl/aanmelden/studie">Technicus Electrotechniek (BBL)</a>
+    </div>
+  </div>
+  <div class="list-all">
+    <div class="list">
+      <div class="BOUWEN"><img src="img/BOUWENWONEN.jpeg"><p class="BOUWENp">Kijk eens om je heen. Alles wat <br>je ziet, is gemaakt. Verkeerslichten, <br>straten, huizen, airco’s, de centrale <br>verwarming en zelfs de leidingen <br>onder de grond. In de branche van <br>Bouwen & Wonen zorgen vakmensen <br>ervoor dat we kunnen wonen, werken <br>en reizen.</p></div>
+        <p class="title">BOUWEN & WONEN</p>  
+      <div class="IT"><img src="img/ITONLINE.jpg"><p class="ITp">Van de smartphone in je hand tot de <br>laptop voor je neus. Van online je <br>sneakers bestellen tot online betalen. <br>Een leven zonder computers en internet <br>is echt ondenkbaar. Voor jou én voor <br>bedrijven. In de branche van IT & <br>Online maken vakmensen je dag een <br>stuk makkelijker. Sterker nog: de wereld <br>ligt aan je voeten.</p></div>
+        <p class="title">IT & ONLINE</p>
+      <div class="MOBILITEIT"><img src="img/MOBILITEIT.jpg"><p class="MOBILITEITp">Als het maar wielen heeft. Aan auto’s, <br>motoren en grote trucks sleutelen is je <br>lust en je leven. In de wereld van <br>Mobiliteit voel jij je thuis. Jij zorgt <br>ervoor dat alles in beweging blijft.</p></div>
+        <p class="title">MOBILITEIT</p>
+    </div>
+      <div class="list-text">
+        <p></p>
+      </div>
+  </div>
+</div>
+<footer>
+  <p>&copy; 2023 ouderavond-website Bradley</p>
+</footer>
+</main>
+<script>
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+</script>
+</body>
+</html>
