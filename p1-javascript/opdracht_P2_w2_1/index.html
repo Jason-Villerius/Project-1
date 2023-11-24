@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    #movingDiv {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        position: absolute;
+      }
+      </style>
+</head>
+<body>
+    
+    <div id="movingDiv"></div>
+
+    <script>
+function moveDiv() {
+   const movingDiv = document.getElementById('movingDiv');
+   const currentPosition = parseInt(movingDiv.style.left) || 0;
+   const newPosition = currentPosition + 1;
+   movingDiv.style.left = newPosition + 'px';
+
+   const screenWidth = window.innerWidth;
+   if (newPosition + 50 > screenWidth) {
+    clearInterval(intelvalId);
+   }
+  }
+  const intelvalId = setInterval(moveDiv, 100 );
+    </script>
+
+
+</body>
+</html>
