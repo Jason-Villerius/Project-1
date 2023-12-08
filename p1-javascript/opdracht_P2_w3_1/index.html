@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Winkelmandje</title>
+</head>
+<body>
+
+<h2>Er zitten <span id="aantalProducten"></span> producten in uw winkelmand</h2>
+
+<p>Uw producten:</p>
+<ul id="winkelmandje"></ul>
+
+<script>
+  // Simuleer een winkelmandje met producten
+  var winkelmandje = ['playstation', 'xbox', 'pc'];
+
+  // Toon het aantal producten in het winkelmandje
+  var aantalProductenElement = document.getElementById('aantalProducten');
+  aantalProductenElement.textContent = winkelmandje.length;
+
+  // Toon de producten in het winkelmandje
+  var winkelmandjeElement = document.getElementById('winkelmandje');
+  for (var i = 0; i < winkelmandje.length; i++) {
+    var productItem = document.createElement('li');
+    productItem.textContent = winkelmandje[i];
+    winkelmandjeElement.appendChild(productItem);
+  }
+</script>
+
+</body>
+</html>
