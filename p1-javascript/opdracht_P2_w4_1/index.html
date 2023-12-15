@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tafel van 10</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<script>
+  // JavaScript code
+  document.addEventListener('DOMContentLoaded', function() {
+    // Voer de for-loop uit om de tafel van 10 op het scherm te tonen
+    for (let i = 1; i <= 10; i++) {
+      // Bereken het resultaat van de tafel van 10 voor de huidige iteratie
+      const resultaat = i * 10;
+
+      // Maak een nieuwe tekststring met de tafel van 10 en voeg deze toe aan de body van de pagina
+      const tekst = document.createTextNode(`${i} x 10 = ${resultaat}`);
+      const paragraaf = document.createElement('p');
+      paragraaf.appendChild(tekst);
+      document.body.appendChild(paragraaf);
+    }
+  });
+</script>
+
+</body>
+</html>
