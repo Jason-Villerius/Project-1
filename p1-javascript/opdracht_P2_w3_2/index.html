@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Loop Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<script>
+  // JavaScript code
+  document.addEventListener('DOMContentLoaded', function() {
+    // Voer de for-loop uit om 100 keer dezelfde tekst op het scherm te schrijven
+    for (let i = 0; i < 100; i++) {
+      // Maak een nieuw paragraaf-element
+      const paragraph = document.createElement('p');
+      
+      // Stel de tekst van het paragraaf-element in
+      paragraph.textContent = 'Geen Slaap, iteratie ' + (i + 1);
+
+      // Voeg het paragraaf-element toe aan de body van de pagina
+      document.body.appendChild(paragraph);
+    }
+  });
+</script>
+
+</body>
+</html>
